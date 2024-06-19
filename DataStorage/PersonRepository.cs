@@ -1,4 +1,5 @@
-﻿using DavidTielke.PMA.CrossCutting.DataClasses;
+﻿using DavidTielke.PMA.CrossCutting.Configuration;
+using DavidTielke.PMA.CrossCutting.DataClasses;
 using DavidTielke.PMA.Data.FileStorage;
 
 namespace DavidTielke.PMA.Data.DataStorage
@@ -7,12 +8,17 @@ namespace DavidTielke.PMA.Data.DataStorage
     {
         private IPersonParser _personParser;
         private IFileReader _fileReader;
+        private readonly IConfigurator _config;
+        private readonly string PATH;
 
         public PersonRepository(IPersonParser personParser, 
-            IFileReader fileReader)
+            IFileReader fileReader,
+            IConfigurator config)
         {
             _personParser = personParser;
             _fileReader = fileReader;
+            _config = config;
+            PATH = _config.Get<string>("CsvPath");
         }
 
         public IQueryable<Person> Query()

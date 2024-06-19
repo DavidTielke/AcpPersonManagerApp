@@ -1,9 +1,10 @@
-﻿using DavidTielke.PMA.Data.DataStorage;
+﻿using DavidTielke.PMA.CrossCutting.Configuration;
+using DavidTielke.PMA.Data.DataStorage;
 using DavidTielke.PMA.Data.FileStorage;
 using DavidTielke.PMA.Logic.PersonManagement;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace Mappings
+namespace DavidTielke.PMA.Infrastructure.Mappings
 {
     public static class ServiceCollectionFactory
     {
@@ -14,6 +15,7 @@ namespace Mappings
             collection.AddTransient<IPersonRepository, PersonRepository>();
             collection.AddTransient<IPersonParser, PersonParser>();
             collection.AddTransient<IFileReader, FileReader>();
+            collection.AddSingleton<IConfigurator, Configurator>();
             return collection;
         }
 
