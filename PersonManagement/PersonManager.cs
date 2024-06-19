@@ -1,9 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿using DavidTielke.PMA.CrossCutting.DataClasses;
+using DavidTielke.PMA.Data.DataStorage;
 
-namespace PersonManagerApp
+namespace DavidTielke.PMA.Logic.PersonManagement
 {
     public class PersonManager
     {

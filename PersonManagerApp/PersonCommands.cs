@@ -1,9 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿using DavidTielke.PMA.Logic.PersonManagement;
 
-namespace PersonManagerApp
+namespace DavidTielke.PMA.UI.ConsoleClient
 {
     public class PersonCommands
     {

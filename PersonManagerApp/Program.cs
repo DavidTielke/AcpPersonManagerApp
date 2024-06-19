@@ -1,4 +1,4 @@
-﻿namespace PersonManagerApp
+﻿namespace DavidTielke.PMA.UI.ConsoleClient
 {
     internal class Program
     {
