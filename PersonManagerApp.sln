@@ -21,6 +21,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataStorage", "DataStorage\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataClasses", "DataClasses\DataClasses.csproj", "{D251291C-0F8B-416F-927B-A3CD65DBE0E5}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{EA8CB68B-4A44-4E46-A6F7-35D351D70DA4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mappings", "Mappings\Mappings.csproj", "{697CACA1-0398-4510-A886-03C68A98605B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -47,6 +51,10 @@ Global
 		{D251291C-0F8B-416F-927B-A3CD65DBE0E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D251291C-0F8B-416F-927B-A3CD65DBE0E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D251291C-0F8B-416F-927B-A3CD65DBE0E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{697CACA1-0398-4510-A886-03C68A98605B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{697CACA1-0398-4510-A886-03C68A98605B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{697CACA1-0398-4510-A886-03C68A98605B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{697CACA1-0398-4510-A886-03C68A98605B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -57,6 +65,7 @@ Global
 		{B73EB315-64C8-4D50-9EB2-0C8132132B41} = {FA31AD68-617E-4F01-B6D9-9C6E609EDAF5}
 		{0DBDFAE4-5242-49FC-A241-A74153783113} = {FA31AD68-617E-4F01-B6D9-9C6E609EDAF5}
 		{D251291C-0F8B-416F-927B-A3CD65DBE0E5} = {FB97D4C8-864A-43A5-9185-50ACB528C279}
+		{697CACA1-0398-4510-A886-03C68A98605B} = {EA8CB68B-4A44-4E46-A6F7-35D351D70DA4}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B44C03F4-7DDF-472F-9AA9-61717FA418A7}
