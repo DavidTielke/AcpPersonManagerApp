@@ -1,6 +1,6 @@
 ﻿namespace DavidTielke.PMA.Data.FileStorage
 {
-    public class FileReader
+    public class FileReader : IFileReader
     {
         public string[] ReadAllLines(string path)
         {

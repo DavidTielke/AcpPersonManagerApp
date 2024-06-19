@@ -2,13 +2,13 @@
 
 namespace DavidTielke.PMA.UI.ConsoleClient
 {
-    public class PersonCommands
+    public class PersonCommands : IPersonCommands
     {
-        private readonly PersonManager _personManager;
+        private readonly IPersonManager _personManager;
 
-        public PersonCommands()
+        public PersonCommands(IPersonManager personManager)
         {
-            _personManager = new PersonManager();
+            _personManager = personManager;
         }
 
         public void DisplayAllAdults()
